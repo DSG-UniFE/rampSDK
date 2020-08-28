@@ -44,7 +44,7 @@ The build process is simple, you just need to compile the entire project (the ma
 
 ## SDK Implementation Insights and Extensions
 
-The main goal of this SDK is to make easier the development of new Data Types and Data Plane Rules for RAMP Multi-LANE. In order to do that was needed to extract from the [RAMP code](https://github.com/DSG-UniFE/ramp/blob/master/deployment/README.md) only the core components needed to build the classes correctly. The usage of interfaces trough the `ComponentLocator` class makes things well separated.
+The main goal of this SDK is to make easier the development of new Data Types and Data Plane Rules for RAMP Multi-LANE. In order to do that was needed to extract from the [RAMP code](https://github.com/DSG-UniFE/ramp) only the core components needed to build the classes correctly. The usage of interfaces trough the `ComponentLocator` class makes things well separated.
 
 The side-effect of this approach is that every time there is a core change in the RAMP code this SDK must be updated accordingly. So everytime there is the need to introduce new components or change the services exposed by an interface this SDK must reflect these changes.
 
